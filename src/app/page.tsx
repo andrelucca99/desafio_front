@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import foto from "../assets/recursos.png"
 import Paragraph from "@/components/Paragraph";
+import TitleSection from "@/components/TitleSection";
 
 export default function Home() {
   return (
@@ -13,21 +14,23 @@ export default function Home() {
         </div>
         <p>campo de input</p>
         <section>
-          <h2>Garantia do Melhor Preço Online</h2>
+          <TitleSection>Garantia do Melhor Preço Online</TitleSection>
 
           <Paragraph>
             A certeza de que o preço apresentado na área do cliente será sempre o menor valor para o produto que você precisa.
           </Paragraph>
-
-          <h2>produtos</h2>
         </section>
 
         <section>
-          <h2>Material Técnico</h2>
+          <TitleSection>produtos</TitleSection>
+        </section>
+
+        <section>
+          <TitleSection>Material Técnico</TitleSection>
         </section>
 
         <section className="w-full p-2">
-          <h2 className="text-2xl font-bold">Recursos</h2>
+          <TitleSection>Recursos</TitleSection>
           <div className="flex bg-transparent gap-3 border border-gray-400 rounded-2xl">
             <div className="w-3/4 flex flex-col justify-between p-3">
               <span className="text-sm font-bold text-gray-500">Blog e Vídeos</span>
@@ -47,11 +50,11 @@ export default function Home() {
         </section>
 
         <section>
-          <h2>Agendamento</h2>
+          <TitleSection>Agendamento</TitleSection>
         </section>
 
         <section>
-          <h2>Crédito</h2>
+          <TitleSection>Crédito</TitleSection>
         </section>
       </main>
     </>
