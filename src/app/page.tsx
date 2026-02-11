@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Image from "next/image";
 import foto from "../assets/recursos.png"
+import Paragraph from "@/components/Paragraph";
 
 export default function Home() {
   return (
@@ -13,9 +14,10 @@ export default function Home() {
         <p>campo de input</p>
         <section>
           <h2>Garantia do Melhor Preço Online</h2>
-          <p>
+
+          <Paragraph>
             A certeza de que o preço apresentado na área do cliente será sempre o menor valor para o produto que você precisa.
-          </p>
+          </Paragraph>
 
           <h2>produtos</h2>
         </section>
@@ -34,9 +36,9 @@ export default function Home() {
                 Acesse conteúdo técnico também através do nosso blog e em nosso canal de vídeos
               </h3>
 
-              <p>
+              <Paragraph>
                 Acompanhe as últimas atualizações do setor, aplicações das soluções em obras, dicas úteis e cases.
-              </p>
+              </Paragraph>
 
               <button className="w-[170px] p-2 bg-[#006E3A] text-white rounded-[8px]">acessar conteúdo</button>
             </div>
