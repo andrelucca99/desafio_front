@@ -15,12 +15,12 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="w-full p-2 grid gap-4 md:gap-6 lg:gap-8 bg-white">
+      <main className="w-full grid bg-white">
         <div className="h-[500px] bg-red-400 col-span-full">
           <p>carrosel</p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-2 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-2 justify-center items-center mt-10 mb-8">
           <input className="border border-gray-500 w-[580px] rounded-[2px] px-7 py-4" type="text" placeholder="O que você está procurando?" />
 
           <button className="w-full h-full sm:w-36 sm:auto p-2 bg-[#006E3A] text-white rounded-[2px]">
@@ -68,7 +68,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section className="w-full bg-[#F4F6F8]">
           <TitleSection>Material Técnico</TitleSection>
           <ServiceModel
             image={ImgMaterial}
@@ -78,7 +78,7 @@ export default function Home() {
           />
         </section>
 
-        <section className="w-full p-2">
+        <section className="w-full bg-[#F4F6F8] p-2">
           <TitleSection>Recursos</TitleSection>
           <div className="flex bg-transparent gap-3 border border-gray-400 rounded-2xl">
             <div className="w-3/4 flex flex-col justify-between p-3">
@@ -100,7 +100,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section className="w-full bg-[#F4F6F8]">
           <TitleSection>Agendamento</TitleSection>
           <ServiceModel
             image={ImgAgendamento}
@@ -111,7 +111,7 @@ export default function Home() {
           />
         </section>
 
-        <section>
+        <section className="w-full bg-[#F4F6F8]">
           <TitleSection>Crédito</TitleSection>
           <ServiceModel
             image={ImgCredito}
