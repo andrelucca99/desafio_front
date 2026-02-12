@@ -32,9 +32,9 @@ export default function ServiceModel({ image, title, description, textButton, cl
       )}
       <div
         className={`absolute ${isReversed ? "top-1/2 left-1/4" : "top-1/2 left-3/4"
-          } transform -translate-x-1/2 -translate-y-1/2 w-[550px] h-[360px] bg-white rounded-2xl p-4 flex flex-col justify-between shadow-lg`}
+          } transform -translate-x-1/2 -translate-y-1/2 w-[450px] max-h-fit bg-white rounded-2xl py-6 px-8 flex flex-col justify-around gap-6 shadow-lg`}
       >
-        <h3 className="text-[34px] font-bold leading-normal text-[##212121] mt-2">{title}</h3>
+        <h3 className="text-[28px] font-bold leading-normal text-[##212121]">{title}</h3>
         <Paragraph>{description}</Paragraph>
         <Button text={textButton} />
       </div>

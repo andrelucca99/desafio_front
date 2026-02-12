@@ -11,6 +11,7 @@ import { products } from "../utils/products.json";
 import ServiceModel from "@/components/ServiceModel";
 import Card from "@/components/Card";
 import Button from "@/components/Button";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -81,7 +82,7 @@ export default function Home() {
 
         <section className="w-full bg-[#F4F6F8] p-2">
           <TitleSection>Recursos</TitleSection>
-          <div className="flex bg-transparent gap-3 border border-gray-400 rounded-2xl">
+          <div className="flex w-full flex-col sm:flex-row bg-transparent gap-3 border border-gray-400 rounded-2xl">
             <div className="w-3/4 flex flex-col justify-between p-3">
               <span className="text-sm font-bold text-gray-500">Blog e Vídeos</span>
 
@@ -119,6 +120,7 @@ export default function Home() {
             textButton="APROVAR MEU CADASTRO"
           />
         </section>
+        <Footer />
       </main>
     </>
   );
