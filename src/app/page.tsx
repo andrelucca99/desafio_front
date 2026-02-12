@@ -4,6 +4,8 @@ import foto from "../assets/recursos.png"
 import Paragraph from "@/components/Paragraph";
 import TitleSection from "@/components/TitleSection";
 
+import { products } from "../utils/products.json";
+
 export default function Home() {
   return (
     <>
@@ -22,7 +24,37 @@ export default function Home() {
         </section>
 
         <section>
-          <TitleSection>produtos</TitleSection>
+          <TitleSection>Estacas Prancha</TitleSection>
+
+          <div className="flex p-2 justify-between w-full">
+            {products.estacas.map(({ title, imagem, description, price }) => (
+              <div className="w-[400px] border border-gray-400 text-center p-2" key={title}>
+                <Image src={imagem} alt={title} width={545} height={310} />
+                <span>{title}</span>
+                <p>{description}</p>
+                <p>A partir de R$ {price} por mês</p>
+                <button className="w-[170px] p-2 bg-[#006E3A] text-white rounded-[8px]">
+                  Ver preços
+                </button>
+              </div>
+            ))}
+          </div>
+
+          <TitleSection>Blindagens de Vala</TitleSection>
+
+          <div className="flex p-2 justify-between w-full">
+            {products.blindagem.map(({ title, imagem, description, price }) => (
+              <div className="w-[400px] border border-gray-400 text-center p-2" key={title}>
+                <Image src={imagem} alt={title} width={545} height={310} />
+                <span>{title}</span>
+                <p>{description}</p>
+                <p>A partir de R$ {price} por mês</p>
+                <button className="w-[170px] p-2 bg-[#006E3A] text-white rounded-[8px]">
+                  Ver preços
+                </button>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section>
@@ -43,7 +75,9 @@ export default function Home() {
                 Acompanhe as últimas atualizações do setor, aplicações das soluções em obras, dicas úteis e cases.
               </Paragraph>
 
-              <button className="w-[170px] p-2 bg-[#006E3A] text-white rounded-[8px]">acessar conteúdo</button>
+              <button className="w-[170px] p-2 bg-[#006E3A] text-white rounded-[8px]">
+                acessar conteúdo
+              </button>
             </div>
             <Image className="rounded-r-2xl" src={foto} alt="Recursos" width={545} height={310} />
           </div>

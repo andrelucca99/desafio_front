@@ -1,0 +1,44 @@
+{
+  "products": {
+    "estacas": [
+      {
+        "imagem": "https://escoramento.com/_next/image/?url=https%3A%2F%2Fescoramento-files.s3.amazonaws.com%2FPRODUCT_IMAGES%2F10835914_U750_4M.png&w=256&q=75",
+        "title": "Estacas Pranchas U750",
+        "description": "Perfis de 750mm de largura, em aço 355 MPa.",
+        "price": 297
+      },
+      {
+        "imagem": "https://escoramento.com/_next/image/?url=https%3A%2F%2Fescoramento-files.s3.amazonaws.com%2FPRODUCT_IMAGES%2F10835914_U750_4M.png&w=256&q=75",
+        "title": "Estacas Pranchas U800",
+        "description": "Indicada para aplicações de carga pesada, em valas profundas, ensacadeiras, estações elevatórias e obras marítimas.",
+        "price": 530
+      },
+      {
+        "imagem": "https://escoramento.com/_next/image/?url=https%3A%2F%2Fescoramento-files.s3.amazonaws.com%2FPRODUCT_IMAGES%2F10835914_U750_4M.png&w=256&q=75",
+        "title": "Estacas Pranchas U600",
+        "description": "Faça seu orçamento em tempo real e receba sua proposta em PDF e em poucos segundos.",
+        "price": 156
+      }
+    ],
+    "blindagem": [
+      {
+        "imagem": "https://escoramento.com/_next/image/?url=https%3A%2F%2Fescoramento-files.s3.amazonaws.com%2FCMS2%2F11823248_Blindagem%2520Leve.png&w=256&q=75",
+        "title": "Blindagens Leves",
+        "description": "Projetadas para trabalhar com Retro Escavadeiras",
+        "price": 2.100
+      },
+      {
+        "imagem": "https://escoramento.com/_next/image/?url=https%3A%2F%2Fescoramento-files.s3.amazonaws.com%2FCMS2%2F2606765_Blindagem-Solo_1.5m.png&w=256&q=75",
+        "title": "Blindagens Pesadas",
+        "description": "Agilidade no trabalho com escavadeiras",
+        "price": 3.200
+      },
+      {
+        "imagem": "https://escoramento.com/_next/image/?url=https%3A%2F%2Fescoramento-files.s3.amazonaws.com%2FPRODUCT_IMAGES%2F8351107_2Ext_02_1.0_300px.png&w=256&q=75",
+        "title": "Extensores de Profundidade",
+        "description": "Trabalho seguro até 5,20m de profundidade",
+        "price": 1.600
+      }
+    ]
+  }
+}
