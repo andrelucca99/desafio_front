@@ -10,6 +10,7 @@ import TitleSection from "@/components/TitleSection";
 import { products } from "../utils/products.json";
 import ServiceModel from "@/components/ServiceModel";
 import Card from "@/components/Card";
+import Button from "@/components/Button";
 
 export default function Home() {
   return (
@@ -74,7 +75,7 @@ export default function Home() {
             image={ImgMaterial}
             title="Catálogos, Manuais de Transporte, Guias de Normas de escavação e Infográfico"
             description="Acesse agora o conteúdo técnico com as especificações, capacidade de carga e dimensões dos equipamentos."
-            textButton="Acessar Conteúdo"
+            textButton="ACESSAR CONTEÚDO"
           />
         </section>
 
@@ -92,9 +93,7 @@ export default function Home() {
                 Acompanhe as últimas atualizações do setor, aplicações das soluções em obras, dicas úteis e cases.
               </Paragraph>
 
-              <button className="w-[170px] p-2 bg-[#006E3A] text-white rounded-[8px]">
-                acessar conteúdo
-              </button>
+              <Button text="ACESSAR CONTEÚDO" />
             </div>
             <Image className="rounded-r-2xl" src={foto} alt="Recursos" width={545} height={310} />
           </div>
@@ -106,7 +105,7 @@ export default function Home() {
             image={ImgAgendamento}
             title="Agendamento Online"
             description="Agende a retirada ou devolução do seu equipamento online. Mais fácil, mais rápido."
-            textButton="Agendar Agora"
+            textButton="AGENDAR AGORA"
             className="reverse"
           />
         </section>
@@ -117,7 +116,7 @@ export default function Home() {
             image={ImgCredito}
             title="Análise de Cadastro na Hora"
             description="Analisamos seu cadastro na hora, de forma rápida e objetiva."
-            textButton="Aprovar Meu Cadastro"
+            textButton="APROVAR MEU CADASTRO"
           />
         </section>
       </main>

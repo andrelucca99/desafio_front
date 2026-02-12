@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import Paragraph from "../Paragraph";
+import Button from "../Button";
 
 interface IServiceModel {
   image: string | StaticImageData,
@@ -35,9 +36,7 @@ export default function ServiceModel({ image, title, description, textButton, cl
       >
         <h3 className="text-[34px] font-bold leading-normal text-[##212121] mt-2">{title}</h3>
         <Paragraph>{description}</Paragraph>
-        <button className="w-[170px] p-2 bg-[#006E3A] text-white rounded-[8px]">
-          {textButton}
-        </button>
+        <Button text={textButton} />
       </div>
     </section>
   );
