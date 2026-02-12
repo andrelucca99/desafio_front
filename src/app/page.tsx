@@ -14,7 +14,15 @@ export default function Home() {
         <div className="h-[500px] bg-red-400">
           <p>carrosel</p>
         </div>
-        <p>campo de input</p>
+
+        <div className="w-lg flex justify-between gap-2">
+          <input className="border border-gray-500 w-full rounded-[8px] p-1" type="text" placeholder="O que você está procurando?" />
+
+          <button className="w-[170px] p-2 bg-[#006E3A] text-white rounded-[8px]">
+            Buscar
+          </button>
+        </div>
+
         <section>
           <TitleSection>Garantia do Melhor Preço Online</TitleSection>
 
