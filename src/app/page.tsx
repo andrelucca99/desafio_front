@@ -9,62 +9,61 @@ import TitleSection from "@/components/TitleSection";
 
 import { products } from "../utils/products.json";
 import ServiceModel from "@/components/ServiceModel";
+import Card from "@/components/Card";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main className="w-full p-2">
-        <div className="h-[500px] bg-red-400">
+      <main className="w-full p-2 grid gap-4 md:gap-6 lg:gap-8 bg-white">
+        <div className="h-[500px] bg-red-400 col-span-full">
           <p>carrosel</p>
         </div>
 
-        <div className="w-lg flex justify-between gap-2">
-          <input className="border border-gray-500 w-full rounded-[8px] p-1" type="text" placeholder="O que você está procurando?" />
+        <div className="flex flex-col sm:flex-row gap-2 justify-center items-center">
+          <input className="border border-gray-500 w-[580px] rounded-[2px] px-7 py-4" type="text" placeholder="O que você está procurando?" />
 
-          <button className="w-[170px] p-2 bg-[#006E3A] text-white rounded-[8px]">
-            Buscar
+          <button className="w-full h-full sm:w-36 sm:auto p-2 bg-[#006E3A] text-white rounded-[2px]">
+            BUSCAR
           </button>
         </div>
 
-        <section>
+        <section className="w-full">
           <TitleSection>Garantia do Melhor Preço Online</TitleSection>
 
-          <Paragraph>
-            A certeza de que o preço apresentado na área do cliente será sempre o menor valor para o produto que você precisa.
-          </Paragraph>
+          <div className="pl-5">
+            <Paragraph>
+              A certeza de que o preço apresentado na área do cliente será sempre o menor valor para o produto que você precisa.
+            </Paragraph>
+          </div>
         </section>
 
-        <section>
+        <section className="flex flex-col items-start pl-2">
           <TitleSection>Estacas Prancha</TitleSection>
 
-          <div className="flex p-2 justify-between w-full">
+          <div className="w-full grid grid-cols-2 sm:grid-cols-3 justify-items-center items-center gap-4 mb-5">
             {products.estacas.map(({ title, imagem, description, price }) => (
-              <div className="w-[400px] border border-gray-400 text-center p-2" key={title}>
-                <Image src={imagem} alt={title} width={545} height={310} />
-                <span>{title}</span>
-                <p>{description}</p>
-                <p>A partir de R$ {price} por mês</p>
-                <button className="w-[170px] p-2 bg-[#006E3A] text-white rounded-[8px]">
-                  Ver preços
-                </button>
-              </div>
+              <Card
+                key={title}
+                imagem={imagem}
+                title={title}
+                description={description}
+                price={price}
+              />
             ))}
           </div>
 
           <TitleSection>Blindagens de Vala</TitleSection>
 
-          <div className="flex p-2 justify-between w-full">
+          <div className="w-full grid grid-cols-2 sm:grid-cols-3 justify-items-center items-center gap-4">
             {products.blindagem.map(({ title, imagem, description, price }) => (
-              <div className="w-[400px] border border-gray-400 text-center p-2" key={title}>
-                <Image src={imagem} alt={title} width={545} height={310} />
-                <span>{title}</span>
-                <p>{description}</p>
-                <p>A partir de R$ {price} por mês</p>
-                <button className="w-[170px] p-2 bg-[#006E3A] text-white rounded-[8px]">
-                  Ver preços
-                </button>
-              </div>
+              <Card
+                key={title}
+                imagem={imagem}
+                title={title}
+                description={description}
+                price={price}
+              />
             ))}
           </div>
         </section>
