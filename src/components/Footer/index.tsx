@@ -1,45 +1,60 @@
 import Image from "next/image";
-import logoFooter from "../../assets/logo_footer.png";
+// import logoFooter from "../../assets/logo_footer.png";
+import imgSuporte from "../../assets/suporte.png";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#006E3A]">
-      <div className="w-[300px] h-[50px] bg-red-300">card</div>
-      <div className="w-full">
-        <div className="grid grid-cols-5 text-white items-start">
+    <footer className="w-full bg-[#006E3A] relative">
+      <div className="w-[90%] max-w-[430px] h-auto bg-[#F4F6F8] absolute -top-8 left-1/2 transform -translate-x-1/2 z-20 rounded-[12px] border border-[#006E3A] flex items-center p-4">
+        <Image
+          className="rounded-l-2xl sm:absolute sm:-top-5 sm:left-4"
+          src={imgSuporte}
+          alt="Suporte Técnico"
+          width={100}
+          height={100}
+        />
+        <div className="relative sm:pl-28 text-center sm:text-left">
+          <p className="text-gray-900 text-[10px] sm:text-[9px]">Suporte Técnico</p>
+          <p className="font-bold text-[14px] sm:text-[16px] text-black">
+            Precisa de Ajuda para Escolher?
+          </p>
+          <p className="flex flex-col sm:flex-row gap-2 items-center text-[12px] sm:text-[14px] text-gray-700">
+            <span>Ligue</span>
+            <span className="text-[#006E3A] font-bold">0800 033 0327</span>
+            <span>Direto com especialista</span>
+          </p>
+        </div>
+      </div>
+
+      <div className="w-full px-4 py-8 mt-32">
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-4 text-white items-start">
           <ul>
-            <li>Equipamentos</li>
+            <li className="font-bold">Equipamentos</li>
             <li>Locação</li>
             <li>Venda</li>
           </ul>
           <ul>
-            <li>Material Técnico</li>
+            <li className="font-bold">Material Técnico</li>
             <li>Catálogos</li>
             <li>Blog</li>
           </ul>
           <ul>
-            <li>Sobre</li>
+            <li className="font-bold">Sobre</li>
             <li>Empresa</li>
             <li>Política de Privacidade</li>
             <li>Termos Gerais de Uso</li>
           </ul>
           <ul>
-            <li>App Cliente</li>
+            <li className="font-bold">App Cliente</li>
             <li>Orçamentos</li>
             <li>Agendamento Online</li>
             <li>Cadastro</li>
           </ul>
-          <ul className="flex flex-col justify-around h-full">
-            <li>Canais de Atendimento</li>
+          <ul>
+            <li className="font-bold">Canais de Atendimento</li>
             <li>Chat com Especialista</li>
           </ul>
         </div>
-        <div className="w-full">redes</div>
-      </div>
-      <div className="w-full bg-green-900 text-white flex justify-between px-8 py-8">
-        <Image src={logoFooter} alt="Escoramento.com" width={200} height={35} />
-        <p>Copyright 2026 Escoramento.com - Todos os Direitos Reservados</p>
-        <span>Sitemap</span>
       </div>
     </footer>
   );
