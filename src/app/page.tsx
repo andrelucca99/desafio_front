@@ -1,10 +1,14 @@
 import Header from "@/components/Header";
 import Image from "next/image";
 import foto from "../assets/recursos.png"
+import ImgMaterial from "../assets/material.png"
+import ImgAgendamento from "../assets/agendamento.png"
+import ImgCredito from "../assets/credito.png"
 import Paragraph from "@/components/Paragraph";
 import TitleSection from "@/components/TitleSection";
 
 import { products } from "../utils/products.json";
+import ServiceModel from "@/components/ServiceModel";
 
 export default function Home() {
   return (
@@ -67,6 +71,12 @@ export default function Home() {
 
         <section>
           <TitleSection>Material Técnico</TitleSection>
+          <ServiceModel
+            image={ImgMaterial}
+            title="Catálogos, Manuais de Transporte, Guias de Normas de escavação e Infográfico"
+            description="Acesse agora o conteúdo técnico com as especificações, capacidade de carga e dimensões dos equipamentos."
+            textButton="Acessar Conteúdo"
+          />
         </section>
 
         <section className="w-full p-2">
@@ -93,10 +103,23 @@ export default function Home() {
 
         <section>
           <TitleSection>Agendamento</TitleSection>
+          <ServiceModel
+            image={ImgAgendamento}
+            title="Agendamento Online"
+            description="Agende a retirada ou devolução do seu equipamento online. Mais fácil, mais rápido."
+            textButton="Agendar Agora"
+            className="reverse"
+          />
         </section>
 
         <section>
           <TitleSection>Crédito</TitleSection>
+          <ServiceModel
+            image={ImgCredito}
+            title="Análise de Cadastro na Hora"
+            description="Analisamos seu cadastro na hora, de forma rápida e objetiva."
+            textButton="Aprovar Meu Cadastro"
+          />
         </section>
       </main>
     </>

@@ -3,7 +3,7 @@ import logo from "../../assets/logo.png";
 
 export default function Header() {
   return (
-    <header className="w-full bg-[#123456] fixed">
+    <header className="w-full bg-[#123456] fixed z-50">
       <div className="flex justify-between pl-6 pr-6 p-1 text-sm font-normal bg-[#006E3A] text-white">
         <p className="">0800 033 0327</p>
 
