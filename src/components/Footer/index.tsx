@@ -8,19 +8,17 @@ export default function Footer() {
       <div className="w-[90%] max-w-[430px] h-auto bg-[#F4F6F8] absolute -top-8 left-1/2 transform -translate-x-1/2 z-20 rounded-[12px] border border-[#006E3A] flex items-center p-4">
         {imgSuporte && (
           <Image
-            className="rounded-l-2xl sm:absolute sm:-top-5 sm:left-4"
+            className="rounded-l-2xl sm:absolute sm:-top-2 sm:-left-0"
             src={imgSuporte}
             alt="Suporte Técnico"
             width={100}
             height={100}
           />
         )}
-        <div className="relative sm:pl-28 text-center sm:text-left">
-          <p className="text-gray-900 text-[10px] sm:text-[9px]">Suporte Técnico</p>
-          <p className="font-bold text-[14px] sm:text-[16px] text-black">
-            Precisa de Ajuda para Escolher?
-          </p>
-          <p className="flex flex-col sm:flex-row gap-2 items-center text-[12px] sm:text-[14px] text-gray-700">
+        <div className="flex flex-col justify-between gap-1 relative sm:pl-25 text-left text-[14px] text-gray-900">
+          <p className="text-[10px]">Suporte Técnico</p>
+          <p className="font-bold text-[16px] text-black">Precisa de Ajuda para Escolher?</p>
+          <p className="w-full flex gap-1">
             <span>Ligue</span>
             <span className="text-[#006E3A] font-bold">0800 033 0327</span>
             <span>Direto com especialista</span>
