@@ -44,7 +44,7 @@ export default function Home() {
           <TitleSection>Estacas Prancha</TitleSection>
 
           <div className="w-full grid grid-cols-2 sm:grid-cols-3 justify-items-center items-center gap-4 mb-5">
-            {products.estacas.map(({ title, imagem, description, price }) => (
+            {products?.estacas?.map(({ title, imagem, description, price }) => (
               <Card
                 key={title}
                 imagem={imagem}
@@ -58,7 +58,7 @@ export default function Home() {
           <TitleSection>Blindagens de Vala</TitleSection>
 
           <div className="w-full grid grid-cols-2 sm:grid-cols-3 justify-items-center items-center gap-4">
-            {products.blindagem.map(({ title, imagem, description, price }) => (
+            {products?.blindagem?.map(({ title, imagem, description, price }) => (
               <Card
                 key={title}
                 imagem={imagem}

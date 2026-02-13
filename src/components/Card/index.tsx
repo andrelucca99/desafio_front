@@ -16,8 +16,10 @@ export default function Card({ imagem, title, description, price }: ICard) {
 
   return (
     <div className="max-w-[400px] w-full h-[600px] text-[14px] rounded-lg flex flex-col justify-between items-start transform hover:-translate-y-2 transition duration-300 cursor-pointer">
-      <Image src={imagem} alt={title} width={545} height={310} className="object-cover rounded-md bg-[#E7E7E7]"
-      />
+      {imagem && (
+        <Image src={imagem} alt={title} width={545} height={310} className="object-cover rounded-md bg-[#E7E7E7]"
+        />
+      )}
       <div>
         <span className="block font-bold text-lg mt-2 mb-4">{title}</span>
         <p>{description}</p>

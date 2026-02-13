@@ -24,10 +24,6 @@ export default function Menu() {
     };
   }, []);
 
-  if (typeof window === "undefined") {
-    return null;
-  }
-
   return (
     <nav ref={menuRef} className="w-[500px] border-r border-r-gray-400">
       <ul className="flex gap-4 p-2">

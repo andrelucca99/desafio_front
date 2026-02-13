@@ -6,13 +6,15 @@ export default function Footer() {
   return (
     <footer className="w-full bg-[#006E3A] relative">
       <div className="w-[90%] max-w-[430px] h-auto bg-[#F4F6F8] absolute -top-8 left-1/2 transform -translate-x-1/2 z-20 rounded-[12px] border border-[#006E3A] flex items-center p-4">
-        <Image
-          className="rounded-l-2xl sm:absolute sm:-top-5 sm:left-4"
-          src={imgSuporte}
-          alt="Suporte Técnico"
-          width={100}
-          height={100}
-        />
+        {imgSuporte && (
+          <Image
+            className="rounded-l-2xl sm:absolute sm:-top-5 sm:left-4"
+            src={imgSuporte}
+            alt="Suporte Técnico"
+            width={100}
+            height={100}
+          />
+        )}
         <div className="relative sm:pl-28 text-center sm:text-left">
           <p className="text-gray-900 text-[10px] sm:text-[9px]">Suporte Técnico</p>
           <p className="font-bold text-[14px] sm:text-[16px] text-black">
