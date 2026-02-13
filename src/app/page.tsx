@@ -17,12 +17,12 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="w-full grid bg-white">
+      <main className="w-full bg-white grid">
         <div className="h-[500px] bg-red-400 col-span-full">
           <p>carrosel</p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-2 justify-center items-center mt-10 mb-8">
+        <div className="flex flex-col sm:flex-row gap-2 justify-center items-center my-15">
           <input className="border border-gray-500 w-[580px] rounded-[2px] px-7 py-4" type="text" placeholder="O que você está procurando?" />
 
           <button className="w-full h-full sm:w-36 sm:auto p-2 bg-[#006E3A] text-white rounded-[2px]">
@@ -30,17 +30,17 @@ export default function Home() {
           </button>
         </div>
 
-        <section className="w-full">
+        <section className="w-full ml-2">
           <TitleSection>Garantia do Melhor Preço Online</TitleSection>
 
-          <div className="pl-5">
+          <div className="pl-5 -mt-2">
             <Paragraph>
               A certeza de que o preço apresentado na área do cliente será sempre o menor valor para o produto que você precisa.
             </Paragraph>
           </div>
         </section>
 
-        <section className="flex flex-col items-start pl-2">
+        <section className="flex flex-col items-start pl-2 pb-12">
           <TitleSection>Estacas Prancha</TitleSection>
 
           <div className="w-full grid grid-cols-2 sm:grid-cols-3 justify-items-center items-center gap-4 mb-5">
@@ -80,13 +80,13 @@ export default function Home() {
           />
         </section>
 
-        <section className="w-full bg-[#F4F6F8] p-2">
+        <section className="w-full bg-[#F4F6F8] py-2 px-5">
           <TitleSection>Recursos</TitleSection>
           <div className="flex w-full flex-col sm:flex-row bg-transparent gap-3 border border-gray-400 rounded-2xl">
-            <div className="w-3/4 flex flex-col justify-between p-3">
+            <div className="w-3/4 flex flex-col justify-between py-8 px-4">
               <span className="text-sm font-bold text-gray-500">Blog e Vídeos</span>
 
-              <h3 className="text-2xl font-bold">
+              <h3 className="text-3xl font-bold">
                 Acesse conteúdo técnico também através do nosso blog e em nosso canal de vídeos
               </h3>
 
@@ -111,7 +111,7 @@ export default function Home() {
           />
         </section>
 
-        <section className="w-full bg-[#F4F6F8]">
+        <section className="w-full bg-[#F4F6F8] pb-30">
           <TitleSection>Crédito</TitleSection>
           <ServiceModel
             image={ImgCredito}
