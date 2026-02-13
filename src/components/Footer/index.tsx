@@ -1,6 +1,7 @@
 import Image from "next/image";
-// import logoFooter from "../../assets/logo_footer.png";
+import logoFooter from "../../assets/logo_footer.png";
 import imgSuporte from "../../assets/suporte.png";
+import ListMenuFooter from "../ListMenuFooter";
 
 export default function Footer() {
   return (
@@ -26,35 +27,41 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="w-full px-4 py-8 mt-32">
+      <div className="w-full px-10 py-8 mt-25">
         <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-4 text-white items-start">
-          <ul>
-            <li className="font-bold">Equipamentos</li>
-            <li>Locação</li>
-            <li>Venda</li>
-          </ul>
-          <ul>
-            <li className="font-bold">Material Técnico</li>
-            <li>Catálogos</li>
-            <li>Blog</li>
-          </ul>
-          <ul>
-            <li className="font-bold">Sobre</li>
-            <li>Empresa</li>
-            <li>Política de Privacidade</li>
-            <li>Termos Gerais de Uso</li>
-          </ul>
-          <ul>
-            <li className="font-bold">App Cliente</li>
-            <li>Orçamentos</li>
-            <li>Agendamento Online</li>
-            <li>Cadastro</li>
-          </ul>
-          <ul>
-            <li className="font-bold">Canais de Atendimento</li>
-            <li>Chat com Especialista</li>
-          </ul>
+          <ListMenuFooter
+            title="Equipamentos"
+            items={["Locação", "Venda"]}
+          />
+
+          <ListMenuFooter
+            title="Material Técnico"
+            items={["Catálogos", "Blog"]}
+          />
+
+          <ListMenuFooter
+            title="Sobre"
+            items={["Empresa", "Política de Privacidade", "Termos Gerais de Uso"]}
+          />
+
+          <ListMenuFooter
+            title="App Cliente"
+            items={["Orçamentos", "Agendamento Online", "Cadastro"]}
+          />
+
+          <ListMenuFooter
+            title="Canais de Atendimento"
+            items={["Chat com Especialista"]}
+          />
         </div>
+      </div>
+      <div className="absolute top-70 w-full rounded-b-4xl p-5 bg-[#006E3A]">
+        icons
+      </div>
+      <div className="w-full flex items-end justify-between p-10 text-white bg-[#134F2E] mt-15">
+        <Image src={logoFooter} alt="" width={180} height={30} />
+        <p>Copyright 2026 Escoramento.com - Todos os Direitos Reservados</p>
+        <span>Sitemap</span>
       </div>
     </footer>
   );
