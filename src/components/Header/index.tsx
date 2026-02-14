@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+
 import Menu from "../Menu";
 import Sidebar from "../Sidebar";
 import logo from "../../assets/logo.png";
@@ -16,8 +17,8 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full bg-white fixed z-50 shadow-sm overflow-x-hidden">
-      <div className="flex justify-between px-6 py-1 text-sm bg-[#006E3A] text-white">
+    <header className="w-full bg-white fixed z-50 shadow-sm">
+      <div className="flex justify-between px-6 py-2 text-[12px] bg-[#006E3A] text-white font-bold">
         <p>0800 033 0327</p>
 
         <div className="flex gap-4">
@@ -37,16 +38,16 @@ export default function Header() {
           <Menu />
 
           <div className="flex items-center gap-5">
-            <ChatBubbleBottomCenterIcon className="w-7 h-7 text-gray-700 hover:text-green-700 cursor-pointer" />
+            <ChatBubbleBottomCenterIcon className="w-7 h-7 hover:text-blue-500 cursor-pointer" />
 
-            <div className="flex items-center py-2 px-3 border border-gray-400 rounded-3xl cursor-pointer group hover:border-green-700">
-              <ShoppingCartIcon className="w-5 h-5 text-gray-700 group-hover:text-green-700" />
-              <p className="pl-2 text-xs text-gray-700 group-hover:text-green-700">
+            <div className="flex items-center py-2 px-3 border border-gray-400 rounded-3xl cursor-pointer group">
+              <ShoppingCartIcon className="w-5 h-5 group-hover:text-blue-500" />
+              <p className="pl-2 text-xs group-hover:text-blue-500">
                 LOJA
               </p>
             </div>
 
-            <UserCircleIcon className="w-7 h-7 text-gray-700 hover:text-green-700 cursor-pointer" />
+            <UserCircleIcon className="w-7 h-7 cursor-pointer" />
           </div>
         </div>
 
