@@ -3,6 +3,7 @@ import logoFooter from "../../assets/logo_footer.png";
 import imgSuporte from "../../assets/suporte.png";
 import ListMenuFooter from "../ListMenuFooter";
 import { FaInstagram, FaLinkedin, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa";
+import Icon from "../Icon";
 
 export default function Footer() {
   return (
@@ -58,11 +59,11 @@ export default function Footer() {
           </div>
         </div>
         <div className="w-full px-10 py-5 flex items-center gap-5">
-          <FaTwitter className="w-6 h-6 text-white" />
-          <FaYoutube className="w-6 h-6 text-white" />
-          <FaInstagram className="w-6 h-6 text-white" />
-          <FaLinkedin className="w-6 h-6 text-white" />
-          <FaTiktok className="w-6 h-6 text-white" />
+          <Icon Icon={FaTwitter} />
+          <Icon Icon={FaYoutube} />
+          <Icon Icon={FaInstagram} />
+          <Icon Icon={FaLinkedin} />
+          <Icon Icon={FaTiktok} />
         </div>
       </div>
       <div className="w-full flex flex-col gap-3 md:flex-row text-center items-center justify-between py-4 px-10 text-white">
