@@ -16,7 +16,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full bg-white fixed z-50 shadow-sm">
+    <header className="w-full bg-white fixed z-50 shadow-sm overflow-x-hidden">
       <div className="flex justify-between px-6 py-1 text-sm bg-[#006E3A] text-white">
         <p>0800 033 0327</p>
 

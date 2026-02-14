@@ -17,12 +17,12 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="w-full bg-white grid">
+      <main className="w-full bg-white grid overflow-x-hidden">
         <div className="h-[500px] bg-red-400 col-span-full">
           <p>carrosel</p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-2 justify-center items-center my-15 mx-10 mx:0">
+        <div className="flex flex-col sm:flex-row gap-2 justify-center items-center mt-10 mb-5 md:my-15 mx-8 mx:0">
           <input className="border border-gray-500 w-full sm:w-[580px] rounded-[2px] px-7 py-4" type="text" placeholder="O que você está procurando?" />
 
           <button className="w-full h-full sm:w-36 sm:auto p-2 bg-[#006E3A] text-white rounded-[2px]">
@@ -80,9 +80,9 @@ export default function Home() {
           />
         </section>
 
-        <section className="w-full bg-[#F4F6F8] py-2">
+        <section className="w-full bg-[#F4F6F8] py-2 px-5">
           <TitleSection>Recursos</TitleSection>
-          <div className="flex w-full flex-col sm:flex-row bg-transparent gap-3 border border-gray-400 rounded-2xl mx-5">
+          <div className="flex w-full flex-col sm:flex-row bg-transparent gap-3 border border-gray-400 rounded-2xl">
             <div className="w-full md:w-3/4 flex flex-col justify-between gap-4 py-8 px-4">
               <span className="text-sm font-bold text-gray-500">Blog e Vídeos</span>
 
