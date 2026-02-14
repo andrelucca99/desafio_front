@@ -21,7 +21,7 @@ export default function HeroCarousel() {
         prevEl: ".prev-slide",
       }}
       loop
-      className="w-full bg-[#00502A]"
+      className="w-full h-fit bg-[#00502A]"
     >
       {slides?.map((slide, index) => (
         <SwiperSlide key={index}>
@@ -33,25 +33,25 @@ export default function HeroCarousel() {
                 fill
                 priority={index === 0}
                 sizes="100vw"
-                className="object-cover rounded-b-4xl"
+                className="object-cover rounded-b-[45px]"
               />
             </div>
 
-            <div className="flex flex-col md:flex-row gap-5 text-left md:items-start justify-around py-8 px-6 md:px-12 text-center md:text-left text-white">
-              <div>
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">
+            <div className="w-full flex flex-col lg:flex-row gap-5 text-left md:items-start justify-around md:justify-between py:8px md:py-16 px-6 lg:px-35 text-center md:text-left text-white mt-4">
+              <div className="w-full lg:w-1/2">
+                <h2 className="text-2xl md:text-5xl font-bold mb-4 uppercase">
                   {slide.title}
                 </h2>
               </div>
-              <div>
-                <h2 className="text-2xl md:text-4xl font-bold mb-4">
+              <div className="w-full lg:w-1/2 mb-15 lg:mb-5">
+                <p className="text-sm md:text-[20px] font-bold mb-4 uppercase">
                   {slide.subtitle}
-                </h2>
-                <p className="max-w-2xl mx-auto md:mx-0 mb-6">
+                </p>
+                <p className="max-w-2xl text-[12px] md:text-[27px] mx-auto md:mx-0 mb-6">
                   {slide.description}
                 </p>
 
-                <button className="bg-[#FED203] text-black px-6 py-3 rounded-lg font-semibold hover:scale-105 transition">
+                <button className="w-[200px] bg-[#FED203] text-black text-sm px-6 py-1 rounded-[4px] font-semibold hover:cursor-pointer hover:shadow-lg hover:shadow-black/30 transition uppercase">
                   {slide.button}
                 </button>
               </div>
@@ -59,11 +59,11 @@ export default function HeroCarousel() {
           </div>
         </SwiperSlide>
       ))}
-      <button className="prev-slide absolute left-[10%] bottom-1 -translate-y-1/2 z-10 text-white hover:cursor-pointer p-2 rounded-full shadow">
+      <button className="hidden md:block prev-slide absolute left-[10%] -bottom-[10px] -translate-y-1/2 z-10 text-white hover:cursor-pointer p-2 rounded-full shadow">
         <FaArrowLeft className="w-6 h-6" />
       </button>
 
-      <button className="next-slide absolute right-[10%] bottom-1 -translate-y-1/2 z-10 text-white hover:cursor-pointer p-2 rounded-full shadow">
+      <button className="hidden md:block next-slide absolute right-[10%] -bottom-[10px] -translate-y-1/2 z-10 text-white hover:cursor-pointer p-2 rounded-full shadow">
         <FaArrowRight className="w-6 h-6" />
       </button>
     </Swiper>
