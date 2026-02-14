@@ -1,0 +1,39 @@
+{
+  "slides": [
+    {
+      "image": "/images/slide1.png",
+      "title": "Escoramento de Solo",
+      "subtitle": "Soluções em Aço",
+      "description": "Linha completa de Blindagens e Estacas Pracha",
+      "button": "Saber Mais"
+    },
+    {
+      "image": "/images/slide2.png",
+      "title": "Nova Linha EuroBox",
+      "subtitle": "Largura Ajustável",
+      "description": "Mais flexibilidade com múltiplas larguras",
+      "button": "Saber Mais"
+    },
+    {
+      "image": "/images/slide3.png",
+      "title": "Blindagens de Vala Flexíveis",
+      "subtitle": "Molas Mecânicas",
+      "description": "Instalação mais fácil, retirada sem sobrecorte",
+      "button": "Cotar Agora"
+    },
+    {
+      "image": "/images/slide4.png",
+      "title": "Pronto para Trabalhar",
+      "subtitle": "Sempre Revisado",
+      "description": "A segurança de saber que tudo foi verificado antes da retirada",
+      "button": "Saber Mais"
+    },
+    {
+      "image": "/images/slide5.png",
+      "title": "Estacas Prancha U750",
+      "subtitle": "Padrão Internacional",
+      "description": "Linha completa em aço S355 para contenções provisórias e obras definitivas",
+      "button": "Saber Mais"
+    }
+  ]
+}

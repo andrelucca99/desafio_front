@@ -12,15 +12,14 @@ import ServiceModel from "@/components/ServiceModel";
 import Card from "@/components/Card";
 import Button from "@/components/Button";
 import Footer from "@/components/Footer";
+import HeroCarousel from "@/components/HeroCarousel";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main className="w-full bg-white grid overflow-x-hidden">
-        <div className="h-[500px] bg-red-400 col-span-full">
-          <p>carrosel</p>
-        </div>
+      <main className="w-full bg-white overflow-x-hidden">
+        <HeroCarousel />
 
         <div className="flex flex-col sm:flex-row gap-2 justify-center items-center mt-10 mb-5 md:my-15 mx-8 mx:0">
           <input className="border border-gray-500 w-full sm:w-[580px] rounded-[2px] px-7 py-4" type="text" placeholder="O que você está procurando?" />
