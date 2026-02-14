@@ -1,18 +1,15 @@
-import Header from "@/components/Header";
-import Image from "next/image";
-import foto from "../assets/recursos.png"
+import ImgCredito from "../assets/credito.png"
 import ImgMaterial from "../assets/material.png"
 import ImgAgendamento from "../assets/agendamento.png"
-import ImgCredito from "../assets/credito.png"
+
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Paragraph from "@/components/Paragraph";
 import TitleSection from "@/components/TitleSection";
-
-import { products } from "../utils/products.json";
 import ServiceModel from "@/components/ServiceModel";
-import Card from "@/components/Card";
-import Button from "@/components/Button";
-import Footer from "@/components/Footer";
 import HeroCarousel from "@/components/HeroCarousel";
+import SectionProducts from "@/components/SectionProducts";
+import SectionResources from "@/components/SectionResources";
 
 export default function Home() {
   return (
@@ -39,35 +36,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="flex flex-col items-start px-5 md:pl-2 pb-12">
-          <TitleSection>Estacas Prancha</TitleSection>
-
-          <div className="w-full grid grid-cols-2 sm:grid-cols-3 justify-items-center items-center gap-4 mb-5">
-            {products?.estacas?.map(({ title, imagem, description, price }) => (
-              <Card
-                key={title}
-                imagem={imagem}
-                title={title}
-                description={description}
-                price={price}
-              />
-            ))}
-          </div>
-
-          <TitleSection>Blindagens de Vala</TitleSection>
-
-          <div className="w-full grid grid-cols-2 sm:grid-cols-3 justify-items-center items-center gap-4">
-            {products?.blindagem?.map(({ title, imagem, description, price }) => (
-              <Card
-                key={title}
-                imagem={imagem}
-                title={title}
-                description={description}
-                price={price}
-              />
-            ))}
-          </div>
-        </section>
+        <SectionProducts />
 
         <section className="w-full bg-[#F4F6F8]">
           <TitleSection>Material Técnico</TitleSection>
@@ -75,29 +44,11 @@ export default function Home() {
             image={ImgMaterial}
             title="Catálogos, Manuais de Transporte, Guias de Normas de escavação e Infográfico"
             description="Acesse agora o conteúdo técnico com as especificações, capacidade de carga e dimensões dos equipamentos."
-            textButton="ACESSAR CONTEÚDO"
+            textButton="acessar conteúdo"
           />
         </section>
 
-        <section className="w-full bg-[#F4F6F8] py-2 px-5">
-          <TitleSection>Recursos</TitleSection>
-          <div className="flex w-full flex-col sm:flex-row bg-transparent gap-3 border border-gray-400 rounded-2xl">
-            <div className="w-full md:w-3/4 flex flex-col justify-between gap-4 py-8 px-4">
-              <span className="text-sm font-bold text-gray-500">Blog e Vídeos</span>
-
-              <h3 className="text-[20px] md:text-3xl font-bold">
-                Acesse conteúdo técnico também através do nosso blog e em nosso canal de vídeos
-              </h3>
-
-              <Paragraph>
-                Acompanhe as últimas atualizações do setor, aplicações das soluções em obras, dicas úteis e cases.
-              </Paragraph>
-
-              <Button text="ACESSAR CONTEÚDO" />
-            </div>
-            <Image className="rounded-b-2xl md:rounded-r-2xl" src={foto} alt="Recursos" width={545} height={310} />
-          </div>
-        </section>
+        <SectionResources />
 
         <section className="w-full bg-[#F4F6F8]">
           <TitleSection>Agendamento</TitleSection>
@@ -105,7 +56,7 @@ export default function Home() {
             image={ImgAgendamento}
             title="Agendamento Online"
             description="Agende a retirada ou devolução do seu equipamento online. Mais fácil, mais rápido."
-            textButton="AGENDAR AGORA"
+            textButton="agendar agora"
             className="reverse"
           />
         </section>
@@ -116,12 +67,11 @@ export default function Home() {
             image={ImgCredito}
             title="Análise de Cadastro na Hora"
             description="Analisamos seu cadastro na hora, de forma rápida e objetiva."
-            textButton="APROVAR MEU CADASTRO"
+            textButton="aprovar meu cadastro"
           />
         </section>
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }
-
