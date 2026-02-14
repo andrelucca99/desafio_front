@@ -36,10 +36,10 @@ export default function ServiceModel({ image, title, description, textButton, cl
       )}
 
       <div
-        className={`absolute ${isReversed
+        className={`relative md:absolute ${isReversed
           ? "md:top-1/2 md:left-1/4"
           : "md:top-1/2 md:left-3/4"
-          } top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full md:w-[450px] max-h-fit bg-white rounded-2xl py-6 px-8 flex flex-col justify-around gap-6 shadow-lg order-2`}
+          } top-[100px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[350px] md:w-[450px] max-h-fit bg-white rounded-2xl py-6 px-8 flex flex-col justify-around gap-6 shadow-lg order-2`}
       >
         <h3 className="text-[20px] sm:text-[28px] font-bold leading-normal text-[#212121]">
           {title}

@@ -33,14 +33,14 @@ export default function Home() {
         <section className="w-full ml-2">
           <TitleSection>Garantia do Melhor Preço Online</TitleSection>
 
-          <div className="pl-5 -mt-2">
+          <div className="px-5 -mt-2">
             <Paragraph>
               A certeza de que o preço apresentado na área do cliente será sempre o menor valor para o produto que você precisa.
             </Paragraph>
           </div>
         </section>
 
-        <section className="flex flex-col items-start pl-2 pb-12">
+        <section className="flex flex-col items-start px-5 md:pl-2 pb-12">
           <TitleSection>Estacas Prancha</TitleSection>
 
           <div className="w-full grid grid-cols-2 sm:grid-cols-3 justify-items-center items-center gap-4 mb-5">
