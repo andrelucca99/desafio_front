@@ -14,16 +14,16 @@ describe('Teste componente ServiceModel', () => {
   it('Deve verificar se os dados do componente são renderizados', () => {
     render(<ServiceModel {...mockServiceModel} />);
 
-    const title = screen.getByText("titulo");
+    const title = screen.getByText(mockServiceModel.title);
     expect(title).toBeInTheDocument();
 
-    const btn = screen.getByText("botão");
+    const btn = screen.getByText(mockServiceModel.textButton);
     expect(btn).toBeInTheDocument();
 
-    const description = screen.getByText("descrição");
+    const description = screen.getByText(mockServiceModel.description);
     expect(description).toBeInTheDocument();
 
-    const img = screen.getByAltText("titulo");
+    const img = screen.getByAltText(mockServiceModel.title);
     expect(img).toBeInTheDocument();
   });
 
