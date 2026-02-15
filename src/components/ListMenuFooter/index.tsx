@@ -5,13 +5,18 @@ interface ILista {
 
 export default function ListMenuFooter({ title, items }: ILista) {
   return (
-    <ul className="flex flex-col gap-2">
-      <li className="font-bold text-[16px]">{title}</li>
-      {
-        items?.map((item) => (
-          <li key={item} className="w-fit text-[14px] hover:border-b hover:cursor-pointer">{item}</li>
-        ))
-      }
-    </ul>
+    <div className="flex flex-col gap-2">
+      <p className="font-bold text-[16px]">{title}</p>
+      <ul>
+        {items.map((item) => (
+          <li
+            key={item}
+            className="w-fit text-[14px] hover:border-b hover:cursor-pointer"
+          >
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
