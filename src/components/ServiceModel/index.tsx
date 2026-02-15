@@ -15,6 +15,7 @@ export default function ServiceModel({ image, title, description, textButton, cl
 
   return (
     <section
+      data-testid="test-reverse"
       className={`w-full flex flex-col md:flex-row relative ${className || ""} z-10`}
     >
       {isReversed ? (
