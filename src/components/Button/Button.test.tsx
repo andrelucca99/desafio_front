@@ -8,5 +8,5 @@ describe('Teste componente Button', () => {
     const btnText = screen.getByRole("button", { name: /Acessar Conteúdo/i });
 
     expect(btnText).toBeInTheDocument();
-  })
-})
+  });
+});
