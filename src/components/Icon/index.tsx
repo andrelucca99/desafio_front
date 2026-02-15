@@ -10,7 +10,9 @@ export default function Icon({
   bgHover = "hover:bg-[#134f2e5c]",
 }: IconProps) {
   return (
-    <div className={`flex items-center justify-center w-10 h-10 rounded-full bg-transparent ${bgHover} transition-colors duration-300 cursor-pointer`}>
+    <div
+      data-testid="icon"
+      className={`flex items-center justify-center w-10 h-10 rounded-full bg-transparent ${bgHover} transition-colors duration-300 cursor-pointer`}>
       <Icon className="w-5 h-5 text-white" />
     </div>
   );
