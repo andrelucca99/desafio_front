@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Button from "./index";
+import Button from "../../components/Button/index";
 
 describe('Teste componente Button', () => {
   it('Verifica se o componente é renderizado e recebe o texto via props', () => {

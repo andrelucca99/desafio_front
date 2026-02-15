@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Paragraph from "./index";
+import Paragraph from "../../components/Paragraph/index";
 
 describe('Teste componente Paragraph', () => {
   it('Verifica se o componente é renderizado e recebe o texto via props', () => {

@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import TitleSection from "./index";
+import TitleSection from "../../components/TitleSection/index";
 
 describe('Teste componente TitleSection', () => {
   it('Verifica se o componente é renderizado e recebe o texto via props', () => {
