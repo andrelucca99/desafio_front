@@ -12,7 +12,7 @@ export default function Icon({
   return (
     <div
       data-testid="icon"
-      className={`flex items-center justify-center w-10 h-10 rounded-full bg-transparent ${bgHover} transition-colors duration-300 cursor-pointer`}>
+      className={`flex items-center justify-center rounded-full bg-transparent ${bgHover} transition-colors duration-300 cursor-pointer p-2`}>
       <Icon className="w-5 h-5 text-white" />
     </div>
   );

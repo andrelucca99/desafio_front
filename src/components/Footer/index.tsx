@@ -6,6 +6,8 @@ import { FaInstagram, FaLinkedin, FaTiktok, FaTwitter, FaYoutube } from "react-i
 import Icon from "../Icon";
 
 export default function Footer() {
+  const anoAtual = new Date().getFullYear();
+
   return (
     <footer className="w-full bg-[#134F2E] relative">
       <div className="absolute -top-1 w-full bg-[#006E3A] rounded-b-3xl relative">
@@ -31,7 +33,7 @@ export default function Footer() {
         </div>
 
         <div className="w-full px-10 py-8">
-          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-4 text-white items-start mt-30 md:mt-20">
+          <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-5 gap-4 text-white items-start mt-30 md:mt-20">
             <ListMenuFooter
               title="Equipamentos"
               items={["Locação", "Venda"]}
@@ -55,10 +57,11 @@ export default function Footer() {
             <ListMenuFooter
               title="Canais de Atendimento"
               items={["Chat com Especialista"]}
+              className="mt-7"
             />
           </div>
         </div>
-        <div className="w-full px-10 py-5 flex items-center gap-5">
+        <div className="w-full px-10 py-5 flex justify-center lg:justify-start items-center gap-5">
           <Icon Icon={FaTwitter} />
           <Icon Icon={FaYoutube} />
           <Icon Icon={FaInstagram} />
@@ -66,10 +69,10 @@ export default function Footer() {
           <Icon Icon={FaTiktok} />
         </div>
       </div>
-      <div className="w-full flex flex-col gap-3 md:flex-row text-center items-center justify-between py-4 px-10 text-white">
+      <div className="w-full flex flex-col gap-3 lg:flex-row text-center items-center justify-between py-4 px-10 text-white text-[13px]">
         <Image src={logoFooter} alt="" width={180} height={30} />
-        <p className="text-[12px]">Copyright 2026 Escoramento.com - Todos os Direitos Reservados</p>
-        <span className="hover:border-b-1 hover:border-white hover:cursor-pointer">Sitemap</span>
+        <p>Copyright {anoAtual} Escoramento.com - Todos os Direitos Reservados</p>
+        <p className="hover:border-b-1 hover:border-white hover:cursor-pointer">Sitemap</p>
       </div>
     </footer>
   );

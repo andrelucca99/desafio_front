@@ -1,9 +1,10 @@
 interface ILista {
   title: string;
   items: string[];
+  className?: string;
 }
 
-export default function ListMenuFooter({ title, items }: ILista) {
+export default function ListMenuFooter({ title, items, className }: ILista) {
   return (
     <div className="flex flex-col gap-2">
       <p className="font-bold text-[16px]">{title}</p>
@@ -11,7 +12,7 @@ export default function ListMenuFooter({ title, items }: ILista) {
         {items.map((item) => (
           <li
             key={item}
-            className="w-fit text-[14px] hover:border-b hover:cursor-pointer"
+            className={`w-fit text-[14px] hover:border-b hover:cursor-pointer mb-2 ${className}`}
           >
             {item}
           </li>
