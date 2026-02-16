@@ -33,7 +33,7 @@ export default function Home() {
 
         <SectionProducts />
 
-        <section className="w-full bg-[#F4F6F8]">
+        <section className="w-full md:h-[800px] lg:h-full bg-[#F4F6F8]">
           <TitleSection>Material Técnico</TitleSection>
           <ServiceModel
             image={ImgMaterial}
@@ -56,7 +56,7 @@ export default function Home() {
           />
         </section>
 
-        <section className="w-full bg-[#F4F6F8] pb-30">
+        <section className="w-full bg-[#F4F6F8] pb-30 md:pt-[50px] lg:pt-0">
           <TitleSection>Crédito</TitleSection>
           <ServiceModel
             image={ImgCredito}
