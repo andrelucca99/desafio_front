@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Teste Técnico - Escoramento.com
 
-## Getting Started
+Este projeto foi desenvolvido como parte do **Teste Técnico para Desenvolvedor Frontend**.
 
-First, run the development server:
+O objetivo foi reproduzir com fidelidade visual e estrutural da página inicial do site:
 
+👉 https://escoramento.com
+
+### Resultado final
+👉 https://desafio-front-wine.vercel.app/
+
+---
+
+## 🎯 Objetivo
+
+Recriar a **Home** do site com foco em:
+
+ - Analisar uma interface real em produção
+ - Reproduzir de forma mais fiel possível o layout e comportamento visual
+ - Aplicar boas práticas de frontend (responsividade, organização de código e
+performance)
+ - Demonstrar atenção a detalhes de UI/UX
+
+---
+
+## 🧰 Tecnologias Utilizadas
+
+- **Next.js 14**
+- **TypeScript**
+- **Tailwind CSS**
+
+## 🚀 Como Rodar o Projeto
+### 1️⃣ Clonar repositório
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone <git@github.com:andrelucca99/desafio_front.git>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2️⃣ Instalar dependências
+```bash
+  npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+### 3️⃣ Rodar ambiente de desenvolvimento
+```bash
+  npm run dev
+``` 
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🧪 Testes - (Opcional)
+- **Jest**
+- **React Testing Library**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+  npm run test
+```
+ ---
 
-## Deploy on Vercel
+ ## Performance do site
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ <img src="./public/images/site.png">
