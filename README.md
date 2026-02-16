@@ -56,6 +56,8 @@ performance)
 ```bash
   npm run test
 ```
+
+<img src="./public/images/testes.png">
  ---
 
  ## Performance do site
