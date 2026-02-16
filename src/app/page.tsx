@@ -5,6 +5,7 @@ import ImgAgendamento from "../assets/agendamento.png"
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Paragraph from "@/components/Paragraph";
+import SearchField from "@/components/SearchField";
 import TitleSection from "@/components/TitleSection";
 import ServiceModel from "@/components/ServiceModel";
 import HeroCarousel from "@/components/HeroCarousel";
@@ -15,16 +16,10 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="w-full bg-white overflow-x-hidden">
+      <main className="w-full flex flex-col bg-white overflow-x-hidden">
         <HeroCarousel />
 
-        <div className="flex flex-col sm:flex-row gap-2 justify-center items-center mt-10 mb-5 md:my-15 mx-8 mx:0">
-          <input className="border border-gray-500 w-full sm:w-[580px] rounded-[2px] px-7 py-4" type="text" placeholder="O que você está procurando?" />
-
-          <button className="w-full h-full sm:w-36 sm:auto p-2 bg-[#006E3A] text-white rounded-[2px]">
-            BUSCAR
-          </button>
-        </div>
+        <SearchField />
 
         <section className="w-full ml-2">
           <TitleSection>Garantia do Melhor Preço Online</TitleSection>
